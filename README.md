@@ -9,14 +9,15 @@ This project helps banks and financial institutions decide whether to approve or
 
 ## Introduction
 
-### Background
-Traditional loan approval methods can be slow and inaccurate, leading to financial risks. This project introduces a smarter way to analyze loan applications using data and machine learning to improve decision-making.
+### Why This Matters
+Traditional loan approval processes can be slow and inaccurate, leading to financial risks. This project introduces a smarter way to analyze loan applications using data and machine learning to improve decision-making.
 
-### Objectives
-- Develop a system that efficiently analyzes loan data.
-- Clean and process loan data for better insights.
-- Test different machine learning models to predict loan approvals.
-- Present key findings using interactive dashboards in Power BI.
+### Goals
+
+- Build an efficient system to analyze loan data.
+- Process and clean data for better insights.
+- Test and compare machine learning models for loan approval predictions.
+- Visualize key trends using Power BI.
 
 ---
 
