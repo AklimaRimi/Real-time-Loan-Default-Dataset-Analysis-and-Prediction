@@ -1,6 +1,6 @@
-# Real-time-Loan-Default-Dataset-Analysis-and-Prediction
 
-# Loan Analysis & Prediction Project
+
+# Loan Default Classification Dataset Analysis & Prediction Project
 
 ## Overview
 This project helps banks and financial institutions decide whether to approve or reject loan applications. By using machine learning and big data tools, we make the process faster, more accurate, and data-driven. We leverage Databricks, Kafka, and Power BI to handle large amounts of loan data in real time and present useful insights visually.
@@ -34,20 +34,27 @@ We reviewed studies on loan risk analysis, the role of machine learning in finan
 4. **Real-Time Predictions**: Utilize Kafka to process loan applications instantly.
 5. **Data Visualization**: Use Power BI to create interactive charts and dashboards.
 6. **Integration**: Connect all tools using Databricks for smooth workflow and scalability.
+7. **Code Implementation:** [Code]()
 
 ---
 
 ## Data Insights & Visualizations
-We analyze the loan dataset and create visual reports, including:
-- **Loan Approval Statistics** (Scoreboard analysis)
-- **Property Value vs. Occupation Type** (Pie chart)
-- **Loan Amount vs. Loan Type** (Horizontal bar chart)
-- **Total Units vs. Security Type** (Bar chart)
-- **Interest Rate vs. Loan Purpose** (Gantt chart)
-- **Income vs. Gender** (Donut chart)
-- **Credit Score vs. Age & Status** (Line plot)
+***Key Insights***
 
-Power BI helps turn complex data into simple, easy-to-understand visual insights.
+**Loan Approvals:** 36.64K loans approved.
+
+**Property & Occupancy:** 93% of loan-backed properties belong to a single occupancy type.
+
+**Loan Type Trends:** Type 1 and 3 receive higher amounts; Type 2 is lower.
+
+**Security Preference:** Direct security-backed loans dominate, suggesting they’re lower risk.
+
+**Loan Purpose:** p1 and p3 have the most interest.
+
+**Income & Gender:** Joint applicants have the highest income; males and females are fairly balanced.
+
+**Credit Score & Age:** Older applicants have higher credit scores; younger ones may struggle with approvals.
+
 
 ---
 
