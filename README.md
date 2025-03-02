@@ -1,6 +1,8 @@
 
 
-# Loan Default Classification Dataset Analysis & Prediction Project
+<h1><Center>Loan Default Classification Dataset Analysis & Prediction Project</Center></h1>
+
+**Developers: Aklima Akter Rimi, MD. Ismail Hasan Tanjer**
 
 ## Overview
 This project helps banks and financial institutions decide whether to approve or reject loan applications. By using machine learning and big data tools, we make the process faster, more accurate, and data-driven. We leverage Databricks, Kafka, and Power BI to handle large amounts of loan data in real time and present useful insights visually.
@@ -35,7 +37,14 @@ We reviewed studies on loan risk analysis, the role of machine learning in finan
 4. **Real-Time Predictions**: Utilize Kafka to process loan applications instantly.
 5. **Data Visualization**: Use Power BI to create interactive charts and dashboards.
 6. **Integration**: Connect all tools using Databricks for smooth workflow and scalability.
-7. **Code Implementation:** [Code]()
+7. **Code Implementation:** [Code](https://github.com/AklimaRimi/Real-time-Loan-Default-Dataset-Analysis-and-Prediction/tree/main/Scripts)
+
+## Design & Architecture
+
+This is our final Architecture. This project is created based on these steps.
+
+![](https://github.com/AklimaRimi/Real-time-Loan-Default-Dataset-Analysis-and-Prediction/blob/main/Screenshot%202025-02-22%20124929.png)
+
 
 ---
 
@@ -55,7 +64,8 @@ We reviewed studies on loan risk analysis, the role of machine learning in finan
 **Income & Gender:** Joint applicants have the highest income; males and females are fairly balanced.
 
 **Credit Score & Age:** Older applicants have higher credit scores; younger ones may struggle with approvals.
-
+![Rimi's Dashboard](https://github.com/AklimaRimi/Real-time-Loan-Default-Dataset-Analysis-and-Prediction/blob/main/PowerBI/Screenshot%202025-02-26%20190906.png)
+![Tanjer's Dashboard]()
 
 ---
 
