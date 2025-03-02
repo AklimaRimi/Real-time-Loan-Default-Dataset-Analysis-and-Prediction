@@ -40,7 +40,7 @@ We reviewed studies on loan risk analysis, the role of machine learning in finan
 ---
 
 ## Data Insights & Visualizations
-***Key Insights***
+### **Key Insights**
 
 **Loan Approvals:** 36.64K loans approved.
 
