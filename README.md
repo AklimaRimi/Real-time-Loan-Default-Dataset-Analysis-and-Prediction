@@ -99,7 +99,6 @@ This is our final Architecture. This project is created based on these steps.
 
 **Credit Score & Age:** Older applicants have higher credit scores; younger ones may struggle with approvals.
 ![Rimi's Dashboard](https://github.com/AklimaRimi/Real-time-Loan-Default-Dataset-Analysis-and-Prediction/blob/main/PowerBI/Screenshot%202025-02-26%20190906.png)
-![Tanjer's Dashboard]()
 
 ---
 
