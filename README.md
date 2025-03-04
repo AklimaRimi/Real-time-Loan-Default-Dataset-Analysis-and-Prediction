@@ -39,6 +39,40 @@ We reviewed studies on loan risk analysis, the role of machine learning in finan
 6. **Integration**: Connect all tools using Databricks for smooth workflow and scalability.
 7. **Code Implementation:** [Code](https://github.com/AklimaRimi/Real-time-Loan-Default-Dataset-Analysis-and-Prediction/tree/main/Scripts)
 
+---
+
+## ETL and Machine Learning Summary
+
+### Dropped Columns
+- The columns `'ID'` and `'year'` were removed as they were not relevant for modeling.  
+- The `'age'` column was also dropped after being split into two separate features: `'Age_range_1'` and `'Age_range_2'`.  
+
+### Handling Null Values
+- Null values in key numerical columns (e.g., interest rate, upfront charges) were replaced with `0` using a coalescing function. We don't want to fill the null values with mean interest. 
+- A null count analysis was performed to identify missing values before handling them.  
+
+### Feature Creation
+- The `'age'` column was split into two new features, `'Age_range_1'` and `'Age_range_2'`, to better represent age groups.  
+- Other transformations and conversions were applied to ensure consistent data formatting.  
+
+### Feature Selection
+- Numerical columns were explicitly converted to `DOUBLE` for compatibility with machine learning models.  
+- Categorical columns were converted to `STRINGNDEXER` to handle them appropriately in the pipeline.  
+
+
+### Model Training
+- Three machine learning models were trained:  
+  - **Logistic Regression**  
+  - **Random Forest Classifier**  
+  - **Gradient Boosted Trees (GBT) Classifier**  
+
+### Best Model and Accuracy
+- **Logistic Regression** was identified as the best-performing model based on accuracy.  
+- The exact accuracy for this dataset using Logistic Regression model is  `100%`.
+
+  
+---
+
 ## Design & Architecture
 
 This is our final Architecture. This project is created based on these steps.
