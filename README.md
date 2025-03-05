@@ -1,5 +1,5 @@
 
-![]([https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FAklimaRimi%2FReal-time-Loan-Default-Dataset-Analysis-and-Prediction&label=Reading%20Time-%3E&countColor=%23ff8a65](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FAklimaRimi%2FReal-time-Loan-Default-Dataset-Analysis-and-Prediction&label=watched&countColor=%23ff8a65))
+![](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FAklimaRimi%2FReal-time-Loan-Default-Dataset-Analysis-and-Prediction&label=watched&countColor=%23ff8a65)
 <h1><Center>Loan Default Classification Dataset Analysis & Prediction Project</Center></h1>
 
 **Developers: Aklima Akter Rimi, MD. Ismail Hasan Tanjer**
