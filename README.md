@@ -20,6 +20,13 @@ Traditional loan risk assessment methods can be slow and inaccurate, leading to 
 
 ---
 
+## Design & Architecture
+
+This project is structured with the following architecture:
+
+![](https://github.com/AklimaRimi/Real-time-Loan-Default-Dataset-Analysis-and-Prediction/blob/main/Screenshot%202025-02-22%20124929.png)
+
+---
 ## How It Works
 
 1. **Collect Data**: Loan-related details (income, credit score, loan amount, etc.) [Dataset](https://www.kaggle.com/datasets/yasserh/loan-default-dataset).
@@ -44,13 +51,58 @@ Traditional loan risk assessment methods can be slow and inaccurate, leading to 
 
 ![Dashboard](https://github.com/AklimaRimi/Real-time-Loan-Default-Dataset-Analysis-and-Prediction/blob/main/PowerBI/Screenshot%202025-02-26%20190906.png)
 
+
+---
+## ETL Code Summary & Model Performance Analysis
+
+## Data Preprocessing & Transformation
+
+### 1. Data Cleaning & Feature Engineering
+- Dropped irrelevant columns: `ID` and `year`.
+- Extracted age ranges from the `age` column:
+  - `Age_range_1` → Lower bound of the range.
+  - `Age_range_2` → Upper bound of the range.
+  - Dropped the original `age` column.
+
+### 2. Data Type Conversion
+- Defined numerical columns (`col_to_double`) and converted them to **DOUBLE**.
+- Converted remaining categorical columns (`col_to_string`) to **STRING**.
+
+### 3. Handling Missing Values
+- Used `COALESCE` to replace NULL values in:
+  - `rate_of_interest`, `Interest_rate_spread`, `Upfront_charges`, `dtir1` → Replaced with `0`.
+- Removed remaining **NaN/NULL** values from the dataset.
+
 ---
 
-## Design & Architecture
+## Feature Engineering & Model Optimization
 
-This project is structured with the following architecture:
+### 4. Encoding Categorical Variables
+- Loaded a **pre-trained `StringIndexerModel`** to encode categorical columns.
+- Dropped original categorical columns after transformation.
 
-![](https://github.com/AklimaRimi/Real-time-Loan-Default-Dataset-Analysis-and-Prediction/blob/main/Screenshot%202025-02-22%20124929.png)
+### 5. Feature Selection & Vectorization
+- **Dropped highly correlated columns** to prevent **overfitting**:
+  - `rate_of_interest_`, `Upfront_charges_`, `Interest_rate_spread_`
+  - Keeping these columns resulted in **100% accuracy**, which indicated overfitting.
+  - Removing highly correlated features **prevented overfitting** and improved model generalization.
+- Used `VectorAssembler` to create a single feature vector (`features`).
+- Final dataset includes:
+  - **`features`** → Feature vector for model input.
+  - **`label`** → Renamed from `Status` for model training.
+
+---
+
+## Model Performance Comparison
+
+| Model                 | Accuracy (%) |
+|----------------------|--------------|
+| **Gradient Boosting** | **87** (Best) |
+| Logistic Regression  | **84** |
+| Random Forest        | **83** |
+
+- **Gradient Boosting provided the best results with 87% accuracy.**
+- **Other models (Logistic Regression & Random Forest) also performed well but slightly lower than Gradient Boosting.**
 
 ---
 
